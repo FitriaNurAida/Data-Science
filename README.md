@@ -16,6 +16,8 @@ Seluruh transaksi sebuah toko online di Inggris selama dua tahun, antara **Desem
 
 Dalam business case di kelas, toko ini kita sebut **RetailKu** (nama fiktif). Datanya asli.
 
+Download Dataset : https://drive.google.com/file/d/1loJRAAZCawSGkrWuhxecixQtKqC8IZZm/view?usp=sharing 
+
 ### Informasi umum
 
 | Atribut | Nilai |
