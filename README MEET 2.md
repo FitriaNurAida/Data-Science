@@ -4,7 +4,7 @@ Materi pertemuan kedua mata kuliah Data Science: data cleaning dan kualitas data
 
 | File | Isi |
 |---|---|
-| `README.md` | Metadata dataset (dokumen ini) |
+| `README MEET 2.md` | Metadata dataset (dokumen ini) |
 | `02_Preprocessing_Data_1.pptx` | Slide materi |
 | `02_Preprocessing_Data_1.ipynb` | Notebook praktik untuk Google Colab |
 
@@ -100,32 +100,9 @@ Kolom-kolomnya bisa dikelompokkan menjadi empat.
 | `Z_CostContact` | Isinya sama di semua baris (3). Tidak dijelaskan di dokumentasi dataset |
 | `Z_Revenue` | Isinya sama di semua baris (11). Tidak dijelaskan di dokumentasi dataset |
 
-### Hal yang perlu diwaspadai
+# Sumber Data
 
-Dataset ini kotor **secara alami**, sehingga cocok untuk latihan data cleaning. Semua hal berikut ditemukan mahasiswa sendiri di notebook Pertemuan 2.
-
-| Temuan | Dimensi kualitas |
-|---|---|
-| File `.csv` yang ternyata dipisahkan tab | Format |
-| `Dt_Customer` tersimpan sebagai teks | Valid |
-| Dua kolom yang isinya sama di semua baris | — |
-| Pelanggan yang tercatat lebih dari sekali dengan `ID` berbeda (duplikat yang tidak terdeteksi oleh `df.duplicated()` biasa) | Unik |
-| Label status pernikahan yang tidak valid atau bersinonim | Konsisten, Valid |
-| Dua label pendidikan untuk jenjang yang setara | Konsisten |
-| Tahun lahir yang tidak masuk akal | Valid |
-| Nilai pendapatan yang janggal | Valid |
-| Pendapatan kosong | Lengkap |
-| Banyak outlier di kolom belanja, yang ternyata nilai nyata | — |
-
-Jumlah persis tiap temuan sengaja tidak dituliskan di sini. Notebook menghitungnya langsung dari data.
-
-### Cara mendapatkan data
-
-1. Unduh dari halaman Kaggle di atas (perlu login).
-2. Simpan `marketing_campaign.csv` di folder `data/` pada repositori kelas.
-3. Ganti `[username]` dan `[nama-repo]` pada `URL_DATA` di bagian 3 notebook. Notebook lalu mengunduh file langsung dari repositori, jadi mahasiswa tidak perlu akun Kaggle.
-
-Jika unduhan gagal, mahasiswa bisa mengunggah file secara manual lewat ikon folder di sisi kiri Colab.
+https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis?resource=download 
 
 ### Membaca data dengan pandas
 
