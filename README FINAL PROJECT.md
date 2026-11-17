@@ -9,10 +9,10 @@ Tugas akhir tengah semester: selesaikan **satu masalah bisnis RetailKu** dengan 
 
 | Ketentuan | Keterangan |
 |---|---|
-| Bentuk kerja | [individu / kelompok maksimal … orang] |
-| Batas pengumpulan | [tanggal, jam] |
-| Presentasi | [tanggal], [… menit] per mahasiswa/kelompok |
-| Cara mengumpulkan | [link Google Classroom / Drive / GitHub] |
+| Bentuk kerja | [individu] |
+| Batas pengumpulan | [Meet 9] |
+| Presentasi | [Meet 9 & Meet 10] |
+| Cara mengumpulkan | [https://drive.google.com/drive/folders/1ste7ew2ZPqxz1a98OTedb2aAU_mJ9eQ1?usp=sharing] |
 
 ---
 
@@ -24,12 +24,8 @@ Dataset ini diambil dari dataset yang sudah kita pakai sejak Pertemuan 2 (Custom
 
 | Atribut | Nilai |
 |---|---|
-| Jumlah baris | 1.048 (**belum bersih**: ada baris duplikat) |
+| Jumlah baris | 1.048 |
 | Jumlah kolom | 6 |
-| Pemisah kolom | Koma (`,`), **bukan** tab seperti `marketing_campaign.csv` |
-| Nilai kosong | Tidak ada |
-| Persiapan data yang wajib | **Hanya menangani duplikat** |
-| Periode data | Belanja dan respons selama dua tahun terakhir (sampai Juni 2014) |
 
 ### Kamus data
 
