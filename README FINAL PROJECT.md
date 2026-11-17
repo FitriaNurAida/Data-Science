@@ -122,7 +122,7 @@ Syarat ide sendiri:
 
    Setiap grafik dan tabel diikuti 1–2 kalimat penjelasan: *apa yang terlihat* dan *apa artinya bagi RetailKu*.
 
-2. **Slide presentasi** ([… slide]) untuk manajer RetailKu: masalah, pendekatan, hasil utama, rekomendasi, keterbatasan.
+2. **Slide presentasi**
 
 ## Penilaian
 
