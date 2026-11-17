@@ -60,14 +60,15 @@ Pilih **satu** business case: **Contoh A**, **Contoh B**, atau **ide kamu sendir
 
 **Langkah minimal:**
 
-1. Tangani duplikat, lalu jelajahi sebaran tiap kolom.
-2. Pilih fitur untuk clustering dan jelaskan alasannya. (Petunjuk: pikirkan apakah `Recency` menggambarkan *siapa* pelanggan itu atau *kapan* terakhir ia belanja.)
-3. Lakukan scaling. Pertimbangkan transformasi log untuk kolom yang sangat miring.
-4. Pilih K dengan metode elbow **dan** silhouette, lalu putuskan dengan pertimbangan bisnis.
-5. Buat profil tiap kelompok (tabel dan/atau heatmap), beri nama yang mudah dipahami.
-6. Validasi dengan `Response`: apakah ada kelompok yang lebih responsif?
-7. Tulis rekomendasi manfaat program loyalitas untuk tiap kelompok.
-
+1. Pahami konteks dan tujuan analytics
+2. Pahami data dengan cara Eksplorasi data dan lakukan Pre-Processing Data.
+3. Pilih fitur untuk clustering dan jelaskan alasannya. (Petunjuk: pikirkan apakah `Recency` menggambarkan *siapa* pelanggan itu atau *kapan* terakhir ia belanja.)
+4. Lakukan scaling. Pertimbangkan transformasi log untuk kolom yang sangat miring.
+5. Pilih K dengan metode elbow **dan** silhouette, lalu putuskan dengan pertimbangan bisnis.
+6. Buat profil tiap kelompok (tabel dan/atau heatmap), beri nama yang mudah dipahami.
+7. Validasi dengan `Response`: apakah ada kelompok yang lebih responsif?
+8. Tulis rekomendasi manfaat program loyalitas untuk tiap kelompok.
+   
 ### Contoh B — Supervised learning: memilih penerima kampanye berikutnya
 
 > **Cerita.** Anggaran kampanye berikutnya hanya cukup untuk mengirim penawaran ke **30% pelanggan**. Manajer marketing bertanya: *"Siapa yang sebaiknya dikirimi? Saya ingin menjangkau sebanyak mungkin pelanggan yang benar-benar akan merespons."*
@@ -83,13 +84,14 @@ Pilih **satu** business case: **Contoh A**, **Contoh B**, atau **ide kamu sendir
 
 **Langkah minimal:**
 
-1. Tangani duplikat, lalu jelajahi hubungan tiap kolom dengan `Response`.
-2. Bagi data latih dan uji (`stratify`, `random_state=42`). Pastikan persiapan data hanya di-*fit* pada data latih.
-3. Buat baseline, lalu latih **minimal dua** model klasifikasi.
-4. Nilai model dengan confusion matrix, precision, recall, F1, dan ROC-AUC, **bukan hanya akurasi**.
-5. Coba tangani kelas tidak seimbang (misalnya `class_weight="balanced"`) dan bandingkan hasilnya.
-6. Hitung berapa persen responden yang terjangkau jika penawaran dikirim ke 30% pelanggan dengan peluang tertinggi.
-7. Tulis rekomendasi: model mana yang dipakai, siapa yang dikirimi, dan apa keterbatasannya.
+1. Pahami konteks dan tujuan analytics
+2. Pahami data dengan cara Eksplorasi data dan lakukan Pre-Processing Data.
+3. Bagi data latih dan uji (`stratify`, `random_state=42`). Pastikan persiapan data hanya di-*fit* pada data latih.
+4. Buat baseline, lalu latih **minimal dua** model klasifikasi.
+5. Nilai model dengan confusion matrix, precision, recall, F1, dan ROC-AUC, **bukan hanya akurasi**.
+6. Coba tangani kelas tidak seimbang (misalnya `class_weight="balanced"`) dan bandingkan hasilnya.
+7. Hitung berapa persen responden yang terjangkau jika penawaran dikirim ke 30% pelanggan dengan peluang tertinggi.
+8. Tulis rekomendasi: model mana yang dipakai, siapa yang dikirimi, dan apa keterbatasannya.
 
 ### Ide sendiri
 
@@ -101,10 +103,8 @@ Kamu boleh membuat business case sendiri dari keenam kolom ini. Beberapa arah ya
 
 Syarat ide sendiri:
 
-- Pertanyaan bisnisnya jelas: siapa yang bertanya, dan keputusan apa yang akan diambil dari hasilmu.
-- Jika memakai supervised learning, **target tidak boleh bocor**: kolom yang dipakai membuat target tidak boleh ikut menjadi prediktor.
-- Konsultasikan idemu ke dosen paling lambat [tanggal].
-
+- Pertanyaan bisnis dan tujuan analytics jelas
+  
 ---
 
 ## Yang dikumpulkan
@@ -135,13 +135,6 @@ Syarat ide sendiri:
 | Evaluation | 20% | Ukuran sesuai business case; tidak hanya akurasi; hasil dibaca dengan jujur |
 | Rekomendasi bisnis | 15% | Menjawab pertanyaan bisnis; bisa ditindaklanjuti; menyebut keterbatasan |
 | Komunikasi | 5% | Notebook rapi dan berjalan; slide jelas untuk orang non-teknis |
-
-## Pengingat dari pertemuan sebelumnya
-
-- **Pertemuan 2–3:** duplikat bisa menyebabkan kebocoran data. Fit scaler dan imputer **hanya di data latih**.
-- **Pertemuan 4:** clustering bergantung pada jarak, jadi **scaling wajib**. Pilih K dengan angka **dan** pertimbangan bisnis.
-- **Pertemuan 5:** selalu bandingkan dengan **baseline**. Waspadai overfitting (skor latih jauh di atas skor uji).
-- **Pertemuan 6:** pada kelas yang tidak seimbang, **akurasi bisa menipu**. Pilih precision atau recall sesuai biaya kesalahan.
 
 ---
 
