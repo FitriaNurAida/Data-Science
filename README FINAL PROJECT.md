@@ -40,23 +40,6 @@ Dataset ini diambil dari dataset yang sudah kita pakai sejak Pertemuan 2 (Custom
 
 > **Peran kolom bisa berubah sesuai business case.** Untuk supervised learning, kamu memilih satu kolom sebagai target. Untuk unsupervised learning, tidak ada target: `Response` **tidak boleh** dipakai untuk membentuk kelompok, tetapi boleh dipakai untuk **memvalidasi** kelompok yang terbentuk (seperti Pertemuan 4).
 
-### Membaca data dan menangani duplikat
-
-```python
-import pandas as pd
-
-df_mentah = pd.read_csv("retailku_final_project.csv")
-print("Ukuran mentah:", df_mentah.shape)
-print("Baris duplikat:", df_mentah.duplicated().sum())
-
-df = df_mentah.drop_duplicates().reset_index(drop=True)
-print("Ukuran bersih:", df.shape)
-```
-
-Laporkan di notebook: **berapa baris duplikat** yang kamu temukan, contohnya seperti apa, dan **kenapa** baris itu perlu dibuang (ingat kebocoran data bentuk 3 di Pertemuan 3).
-
-Langkah persiapan lain (transformasi log, scaling, membuat fitur baru, menangani outlier) **tidak wajib**, tetapi boleh dilakukan jika kamu bisa menjelaskan alasannya.
-
 ---
 
 ## Tugas
